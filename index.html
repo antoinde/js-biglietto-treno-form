@@ -18,11 +18,24 @@
     <h2>Calcolo prezzo</h2>
     <img src="https://i.picsum.photos/id/155/3264/2176.jpg?hmac=Zgf_oGMJeg18XoKBFmJgp2DgHMRYuorXlDx5wLII9nU" alt="Rail photo">
     <br>
-    <input type="text" placeholder="Nome e cognome">
-    <input type="number" placeholder="Kilometri da percorrere?">
-    <input type="number" placeholder="Età?">
-    <br>
-    <button>Send</button>
+    <h4>Inserisci i dati richiesti.</h4>
+    <hr>
+    <form id="myForm" action="#" method="GET">
+        <label for="name">Nominativo</label>
+        <br>
+        <input type="text" id="name" placeholder="Nome e cognome" required>
+        <br>
+        <label for="distance">Distanza</label>
+        <br>
+        <input type="number" id="distance" placeholder="Kilometri da percorrere?" required>
+        <br>
+        <label for="age">Età</label>
+        <br>
+        <input type="number" id="age" placeholder="Età?" required>
+        <br>
+        <button type="submit">Calcola costo biglietto!</button>
+    </form>
+    <hr>
     <div id="content">
 
     </div>
