@@ -1,6 +1,11 @@
 img {
     width: 400px;
 }
-div{
-    
+.container {
+    padding: 30px;
+    background-color: grey;
+    text-align: center;
+}
+.button{
+    margin-top: 10px;
 }
