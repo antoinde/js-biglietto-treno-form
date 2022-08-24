@@ -1,19 +1,19 @@
-console.log('JS OK!');
+console.log('JS OK! =)');
 
-const myForm = document.getElementById("myForm");
+const button = document.getElementById("button");
 
-    myForm.addEventListener("submit", 
+    button.addEventListener("click", 
         function(){
             console.log("Il form è stato inviato correttamente!");
 
             //accedi all'input distance
             var element = document.getElementById("distance");
-            const km = element.value;
+            const km = parseInt(element.value);
             console.log('Distance: ' + km );
 
             //accedi all'input age
             var element = document.getElementById("age");
-            const age = element.value;
+            const age = parseInt(element.value);
             console.log('Age: ' + age );
 
             let cost = km * 0.21;
@@ -31,6 +31,7 @@ const myForm = document.getElementById("myForm");
         });
 /*
 // assegnazione variabili dall'esterno
+
 const km = parseInt(prompt('Quanti km vuoi percorrere?'));
 const age = parseInt(prompt('Quanti anni hai?'));
 
